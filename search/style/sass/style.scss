@@ -1,0 +1,68 @@
+@import 'foundation/variables';
+
+// General
+body{
+  font-family: 'arial', sans-serif;
+  height: 100%;
+  font-size: 14px;
+  margin: 0%;
+  padding: 0%;
+  
+  // TO REMOVE
+  background-color: #576070;
+
+  a {
+    text-decoration: none;
+    color: #70757a;
+  }
+}
+
+// Header
+header{
+  display: flex;
+  justify-content: flex-end;
+
+  nav{
+    padding: 20px;
+    a{
+      color: #212121;
+    }
+  
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+// MAIN
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  form{
+    padding: 20px;
+  }
+
+  #search_bar{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    width: auto;
+    border-radius: 24px;
+    padding: 5px 8px 0 14px;
+    input{
+      border: none;
+    }
+  }
+
+}
+
+// FOOTER 
+footer{
+  background-color: $footerColor;
+  width: 100%;
+  min-height: 94px;
+}

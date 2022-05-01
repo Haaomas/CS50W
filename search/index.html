@@ -1,0 +1,89 @@
+<!-- Your website must meet the following requirements:
+
+Your website should have at least three pages: one for regular Google Search (which must be called index.html), one for Google Image Search, and one for Google Advanced Search.
+On the Google Search page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. On each of the other two pages, there should be a link in the upper-right to go back to Google Search.
+On the Google Search page, the user should be able to type in a query, click “Google Search”, and be taken to the Google search results for that page.
+Like Google’s own, your search bar should be centered with rounded corners. The search button should also be centered, and should be beneath the search bar.
+On the Google Image Search page, the user should be able to type in a query, click a search button, and be taken to the Google Image search results for that page.
+On the Google Advanced Search page, the user should be able to provide input for the following four fields (taken from Google’s own advanced search options)
+Find pages with… “all these words:”
+Find pages with… “this exact word or phrase:”
+Find pages with… “any of these words:”
+Find pages with… “none of these words:”
+Like Google’s own Advanced Search page, the four options should be stacked vertically, and all of the text fields should be left aligned.
+Consistent with Google’s own CSS, the “Advanced Search” button should be blue with white text.
+When the “Advanced Search” button is clicked, the user should be taken to the search results page for their given query.
+Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal results page.
+You may encounter a redirect notice when using the “I’m Feeling Lucky” button. Not to worry! This is an expected consequence of a security feature implemented by Google.
+The CSS you write should resemble Google’s own aesthetics. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/v4-shims.css">
+  <title>Search</title>
+</head>
+
+<body>
+  <!-- Nav  -->
+  <header>
+    <nav>
+      <a href="./googleImage.html">Images</a>
+    </nav>
+  </header>
+
+  <!-- Form and Google Image -->
+  <main>
+    <div id="logo">
+      <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    </div>
+    <form action="https://google.com/search">
+      <div id="search_bar">
+        <div id="loupe">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input type="text" name="q">
+      </div>
+      <div>
+        <input type="submit" name="btnK" value="Google Search">
+        <input type="submit" name="btnI" value="I'm Feeling Lucky">
+      </div>
+    </form>
+    <div id="bottom_space"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- First Line -->
+    <div id="language">
+      <span>France</span>
+    </div>
+
+    <!-- Second Line -->
+    <div>
+      <div class="footer" id="left">
+        <a href="https://about.google/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+        <a href="https://www.google.fr/intl/en_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        <a href="https://www.google.fr/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+        <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+      </div>
+      <div class="footer" id="right">
+        <a href="https://support.google.com/legal/answer/3110420?hl=en-FR&fg=1">Repport inappropiate content</a>
+        <a href="https://support.google.com/websearch?p=fr_consumer_info&hl=en-FR&fg=1">Consumer information</a>
+        <a href="https://policies.google.com/privacy?hl=en-FR&fg=1">Privacy</a>
+        <a href="https://policies.google.com/terms?hl=en-FR&fg=1">Terms</a>
+        <span>Setting</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
