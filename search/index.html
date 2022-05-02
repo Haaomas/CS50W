@@ -22,68 +22,74 @@ The CSS you write should resemble Google’s own aesthetics. -->
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/v4-shims.css">
-  <title>Search</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/v4-shims.css">
+    <title>Search</title>
 </head>
 
 <body>
-  <!-- Nav  -->
-  <header>
-    <nav>
-      <a href="./googleImage.html">Images</a>
-    </nav>
-  </header>
+    <!-- Nav  -->
+    <header>
+        <nav>
+            <a href="./googleImage.html">Images</a>
+        </nav>
+    </header>
 
-  <!-- Form and Google Image -->
-  <main>
-    <div id="logo">
-      <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-    </div>
-    <form action="https://google.com/search">
-      <div id="search_bar">
-        <div id="loupe">
-          <i class="fa-solid fa-magnifying-glass"></i>
+    <!-- Form and Google Image -->
+    <main>
+        <div id="logo">
+            <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
         </div>
-        <input type="text" name="q">
-      </div>
-      <div>
-        <input type="submit" name="btnK" value="Google Search">
-        <input type="submit" name="btnI" value="I'm Feeling Lucky">
-      </div>
-    </form>
-    <div id="bottom_space"></div>
-  </main>
+        <div id="form">
+            <form action="https://google.com/search">
+                <div id="flexMePlease">
+                    <div id="search_bar">
+                        <div id="loupe">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input type="text" name="q">
+                    </div>
+                </div>
+                <div id="submit">
+                    <input type="submit" name="btnK" value="Google Search">
+                    <input type="submit" name="btnI" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </div>
+        <div id="bottom_space"></div>
+    </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <!-- First Line -->
-    <div id="language">
-      <span>France</span>
-    </div>
+    <img src="./googleAdvanced.html" alt="">
 
-    <!-- Second Line -->
-    <div>
-      <div class="footer" id="left">
-        <a href="https://about.google/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
-        <a href="https://www.google.fr/intl/en_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-        <a href="https://www.google.fr/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
-        <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
-      </div>
-      <div class="footer" id="right">
-        <a href="https://support.google.com/legal/answer/3110420?hl=en-FR&fg=1">Repport inappropiate content</a>
-        <a href="https://support.google.com/websearch?p=fr_consumer_info&hl=en-FR&fg=1">Consumer information</a>
-        <a href="https://policies.google.com/privacy?hl=en-FR&fg=1">Privacy</a>
-        <a href="https://policies.google.com/terms?hl=en-FR&fg=1">Terms</a>
-        <span>Setting</span>
-      </div>
-    </div>
-  </footer>
+    <!-- FOOTER
+    <footer>
+        First Line
+        <div id="language">
+            <span>France</span>
+        </div>
+    
+        Second Line
+        <div id="moreFooter">
+            <div class="footer" id="left">
+                <a href="https://about.google/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                <a href="https://www.google.fr/intl/en_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a href="https://www.google.fr/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+            </div>
+            <div class="footer" id="right">
+                <a href="https://support.google.com/legal/answer/3110420?hl=en-FR&fg=1">Report inappropriate content</a>
+                <a href="https://support.google.com/websearch?p=fr_consumer_info&hl=en-FR&fg=1">Consumer information</a>
+                <a href="https://policies.google.com/privacy?hl=en-FR&fg=1">Privacy</a>
+                <a href="https://policies.google.com/terms?hl=en-FR&fg=1">Terms</a>
+                <span>Setting</span>
+            </div>
+        </div>
+    </footer> -->
 </body>
 
 </html>

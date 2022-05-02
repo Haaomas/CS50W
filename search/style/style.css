@@ -1,10 +1,10 @@
 body {
   font-family: "arial", sans-serif;
-  height: 100%;
   font-size: 14px;
+  width: 100%;
+  height: 100%;
   margin: 0%;
   padding: 0%;
-  background-color: #576070;
 }
 body a {
   text-decoration: none;
@@ -19,7 +19,7 @@ header nav {
   padding: 20px;
 }
 header nav a {
-  color: #212121;
+  color: #5f6368;
 }
 header nav a:hover {
   text-decoration: underline;
@@ -27,29 +27,73 @@ header nav a:hover {
 
 main {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 25vh;
 }
-main form {
+main #form {
   padding: 20px;
+  width: 100%;
+  text-align: center;
 }
-main #search_bar {
+main #form #flexMePlease {
   display: flex;
+  justify-content: center;
+  height: 44px;
+}
+main #form #search_bar {
+  color: #9aa0a6;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
   background-color: #fff;
   border: 1px solid #dfe1e5;
-  width: auto;
+  width: 29%;
   border-radius: 24px;
-  padding: 5px 8px 0 14px;
+  padding: 5px 8px 5px 14px;
 }
-main #search_bar input {
+main #form #search_bar input {
   border: none;
+  width: 100%;
+  margin: 0 10px;
+  outline: none;
+}
+main #form #submit {
+  padding-top: 20px;
+}
+main #form #submit input {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
 
-footer {
-  background-color: #f2f2f2;
-  width: 100%;
-  min-height: 94px;
+#center_logo {
+  position: relative;
+}
+
+span {
+  position: absolute;
+  top: 70px;
+  right: -2px;
+  color: #4285f4;
+}
+
+#blue_loupe {
+  color: #4285f4;
+  margin: 0 10px 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
