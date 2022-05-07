@@ -76,6 +76,7 @@ for i in [0, 1, 2, 3, 4, 5]:  # print 6
 for i in range(6):  # print 6
     print(f"Second Loop {i}")
 
+
 # Single string for test character
 walterWhiter = "Heisenberg"
 
