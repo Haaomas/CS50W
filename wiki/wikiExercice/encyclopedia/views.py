@@ -1,3 +1,4 @@
+from markdown2 import Markdown
 from django.shortcuts import render
 
 from . import util
@@ -10,11 +11,18 @@ def index(request):
 
 # Make a dynamique URL for the home list
 def entries_url(request, title):
-    return render(request, "encyclopedia/entries.html", {
-        "title": title.capitalize()
-    })
+    # Function to convert Markdown to HTML 
+    markdown = Markdown()
     
-# def entries_content(request, title):
-#     # "content": get_entry(title)
-#     return render(request, "encyclopedia/entries.html", {
-#     })
+    # Get the content of the page(title)
+    content = util.get_entry(title)
+    if content == None:
+        return render(request, "encyclopedia/404.html", {
+            "title": title
+        })
+    else:
+    # Return the page with the good content 
+        return render(request, "encyclopedia/entries.html", {
+            "entryContent": markdown.convert(content),
+            "title": title
+        })
