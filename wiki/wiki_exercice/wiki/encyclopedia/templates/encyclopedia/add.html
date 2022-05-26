@@ -1,0 +1,27 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Add
+{% endblock %}
+
+{% block body %}
+<h1>Here you can add a New entry</h1>
+<form action="{% url 'encyclopedia:add' %}" method="POST">
+    {% comment %} * Cross-site Request Forgery {% endcomment %}
+    {% csrf_token %}
+    
+    {% comment %} * Django's form {% endcomment %}
+    {{ form }}
+
+    {% comment %} * OLD SCHOOl FORM {% endcomment %}
+    {% comment %} <div>
+        <label id="titleForm" for="titleForm">Title</label>
+        <input type="text" name="titleForm" id="titleForm" required>
+    </div>
+    <div>
+        <label id="contentForm" for="contentForm">Content</label>
+        <textarea name="contentForm" name="contentForm" id="contentForm" cols="5" rows="3" placeholder="Type your content here" required></textarea>
+    </div> {% endcomment %}
+    <input type="submit">
+</form>
+{% endblock %}
